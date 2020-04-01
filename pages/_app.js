@@ -19,7 +19,7 @@ class MyApp extends App {
     render() {
         console.log("Sending shop origin ", Cookies.get('shopOrigin'));
         const { Component, pageProps } = this.props;
-        const config = { apiKey: API_KEY, shopOrigin: "displace-international.myshopify.com", forceRedirect: true };
+        const config = { apiKey: API_KEY, shopOrigin: SHOP_ORIGIN, forceRedirect: true };
         return (
             <React.Fragment>
                 <Head>
